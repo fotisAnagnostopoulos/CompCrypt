@@ -19,11 +19,11 @@ def main():
     rot_alphabet = []
     for i in alphabet:
         rot_alphabet.append(chr((ord(i) - ord('a') + 3) % 26 + ord('a')))
-
     ciphertext = []
     for i in original:
-        ciphertext.append(rot_alphabet[ord(i) - ord('a')])
-        print(i)
+        print(ord(i) - ord('a'))
+        ciphertext.append(rot_alphabet[(ord(i) - ord('a'))%26])
+        
     print(original)
     print(ciphertext)
 
