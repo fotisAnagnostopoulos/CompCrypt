@@ -5,6 +5,7 @@ from collections import Counter
 #text = "Good morning sweetheart".lower().replace(' ', '')
 
 text = input().lower().replace(' ', '').replace(',', '').replace('.', '')
+
 # fi is the frequency of i-th letter in the text
 f = Counter(text.strip())
 
